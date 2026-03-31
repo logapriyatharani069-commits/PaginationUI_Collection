@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>All Pagination Styles</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+  padding: 30px;
+}
+
+/* Section Title */
+h2 {
+  margin-top: 40px;
+  color: #333;
+}
+
+/* Common Pagination */
+.pagination {
+  display: flex;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.pagination a {
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  background: #fff;
+  color: #333;
+  border: 1px solid #ddd;
+  transition: 0.3s;
+}
+
+/* Hover */
+.pagination a:hover {
+  background: #4facfe;
+  color: #fff;
+}
+
+/* Active */
+.active {
+  background: #4facfe;
+  color: white;
+}
+
+/* Disabled */
+.disabled {
+  pointer-events: none;
+  color: #aaa;
+}
+
+/* Rounded */
+.round a {
+  border-radius: 50%;
+}
+
+/* Gradient */
+.gradient .active {
+  background: linear-gradient(45deg, #ff7e5f, #feb47b);
+  border: none;
+  color: white;
+}
+
+/* Shadow */
+.shadow a {
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+/* Glass */
+.glass {
+  backdrop-filter: blur(10px);
+  background: rgba(255,255,255,0.3);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* Large */
+.large a {
+  padding: 12px 18px;
+  font-size: 18px;
+}
+
+/* Small */
+.small a {
+  padding: 5px 10px;
+  font-size: 12px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>🔢 Pagination Collection</h1>
+
+<!-- Basic -->
+<h2>Basic Pagination</h2>
+<div class="pagination">
+  <a class="disabled">«</a>
+  <a class="active">1</a>
+  <a>2</a>
+  <a>3</a>
+  <a>»</a>
+</div>
+
+<!-- Rounded -->
+<h2>Rounded Pagination</h2>
+<div class="pagination round">
+  <a>1</a>
+  <a class="active">2</a>
+  <a>3</a>
+</div>
+
+<!-- Gradient -->
+<h2>Gradient Pagination</h2>
+<div class="pagination gradient">
+  <a>1</a>
+  <a class="active">2</a>
+  <a>3</a>
+</div>
+
+<!-- Shadow -->
+<h2>Shadow Pagination</h2>
+<div class="pagination shadow">
+  <a>1</a>
+  <a class="active">2</a>
+  <a>3</a>
+</div>
+
+<!-- Glassmorphism -->
+<h2>Glass Pagination</h2>
+<div class="pagination glass">
+  <a>1</a>
+  <a class="active">2</a>
+  <a>3</a>
+</div>
+
+<!-- Large -->
+<h2>Large Pagination</h2>
+<div class="pagination large">
+  <a>1</a>
+  <a class="active">2</a>
+  <a>3</a>
+</div>
+
+<!-- Small -->
+<h2>Small Pagination</h2>
+<div class="pagination small">
+  <a>1</a>
+  <a class="active">2</a>
+  <a>3</a>
+</div>
+
+</body>
+</html>
